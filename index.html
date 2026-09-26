@@ -1,0 +1,1717 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For My Puchjkuu Pie ❤️</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #ffe4ec,
+        #fff8fa
+      );
+      color: #4a2631;
+      overflow-x: hidden;
+    }
+
+
+    /* =================================
+       PASSWORD SCREEN
+    ================================= */
+
+    #passwordScreen {
+      position: fixed;
+      inset: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffd6e2,
+          #fff0f5,
+          #ffe4ec
+        );
+
+      z-index: 9999;
+
+      padding: 20px;
+    }
+
+
+    .password-box {
+      width: 100%;
+      max-width: 450px;
+
+      background: rgba(255,255,255,0.92);
+
+      padding: 40px 25px;
+
+      border-radius: 30px;
+
+      text-align: center;
+
+      box-shadow:
+        0 20px 60px rgba(120,40,70,0.2);
+
+      animation: passwordAppear 0.8s ease;
+    }
+
+
+    @keyframes passwordAppear {
+
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+    }
+
+
+    .lock {
+      font-size: 65px;
+      margin-bottom: 15px;
+    }
+
+
+    .password-box h1 {
+      font-size: 32px;
+      color: #b52f59;
+      margin-bottom: 15px;
+    }
+
+
+    .password-box p {
+      color: #633744;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+
+    .password-box input {
+      width: 100%;
+
+      padding: 14px 18px;
+
+      border-radius: 50px;
+
+      border: 2px solid #f0b4c5;
+
+      outline: none;
+
+      text-align: center;
+
+      font-size: 18px;
+
+      margin-bottom: 15px;
+    }
+
+
+    .password-box input:focus {
+      border-color: #c83d65;
+    }
+
+
+    .password-box button {
+      border: none;
+
+      padding: 14px 25px;
+
+      border-radius: 50px;
+
+      background: #c83d65;
+
+      color: white;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+    }
+
+
+    .password-box button:hover {
+      background: #a9274d;
+      transform: translateY(-2px);
+    }
+
+
+    #wrongPassword {
+      margin-top: 15px;
+
+      color: #c83259;
+
+      font-weight: bold;
+
+      min-height: 25px;
+    }
+
+
+
+    /* =================================
+       FLOATING HEARTS
+    ================================= */
+
+    .heart {
+      position: fixed;
+
+      bottom: -30px;
+
+      font-size: 22px;
+
+      animation:
+        floatUp 8s linear infinite;
+
+      opacity: 0.7;
+
+      pointer-events: none;
+
+      z-index: 1;
+    }
+
+
+    @keyframes floatUp {
+
+      0% {
+        transform:
+          translateY(0)
+          rotate(0deg);
+
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 0.8;
+      }
+
+      100% {
+        transform:
+          translateY(-110vh)
+          rotate(360deg);
+
+        opacity: 0;
+      }
+
+    }
+
+
+
+    /* =================================
+       CONTAINER
+    ================================= */
+
+    .container {
+      width: 92%;
+
+      max-width: 900px;
+
+      margin: auto;
+
+      position: relative;
+
+      z-index: 2;
+    }
+
+
+
+    /* =================================
+       HERO
+    ================================= */
+
+    .hero {
+
+      min-height: 100vh;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+      padding: 30px 0;
+    }
+
+
+    .hero-box {
+
+      background:
+        rgba(255,255,255,0.78);
+
+      backdrop-filter:
+        blur(15px);
+
+      padding:
+        45px 25px;
+
+      border-radius:
+        30px;
+
+      box-shadow:
+        0 15px 50px
+        rgba(150,70,90,0.15);
+
+      width: 100%;
+    }
+
+
+    .small {
+
+      font-size: 14px;
+
+      letter-spacing: 2px;
+
+      color: #b44d69;
+
+      margin-bottom: 15px;
+    }
+
+
+    h1 {
+
+      font-size:
+        clamp(38px, 8vw, 72px);
+
+      color: #b52f59;
+
+      margin-bottom: 15px;
+    }
+
+
+    .hero p {
+
+      font-size: 18px;
+
+      line-height: 1.8;
+
+      max-width: 680px;
+
+      margin: auto;
+    }
+
+
+
+    /* =================================
+       BUTTON
+    ================================= */
+
+    .btn {
+
+      margin-top: 20px;
+
+      border: none;
+
+      padding:
+        14px 25px;
+
+      border-radius: 50px;
+
+      background: #c83d65;
+
+      color: white;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: 0.3s;
+
+      box-shadow:
+        0 8px 20px
+        rgba(200,61,101,0.25);
+    }
+
+
+    .btn:hover {
+
+      transform:
+        translateY(-3px);
+
+      background:
+        #a9274d;
+    }
+
+
+
+    /* =================================
+       SECTIONS
+    ================================= */
+
+    section {
+
+      padding: 70px 0;
+    }
+
+
+    .section-title {
+
+      text-align: center;
+
+      font-size: 34px;
+
+      margin-bottom: 35px;
+
+      color: #9f3152;
+    }
+
+
+
+    /* =================================
+       MESSAGE
+    ================================= */
+
+    .message {
+
+      background: white;
+
+      border-radius: 25px;
+
+      padding: 30px;
+
+      line-height: 1.9;
+
+      text-align: center;
+
+      box-shadow:
+        0 10px 35px
+        rgba(130,50,70,0.10);
+
+      font-size: 17px;
+    }
+
+
+
+    /* =================================
+       CARE CARDS
+    ================================= */
+
+    .cards {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(220px, 1fr)
+        );
+
+      gap: 20px;
+    }
+
+
+    .card {
+
+      background:
+        rgba(255,255,255,0.85);
+
+      padding:
+        28px 20px;
+
+      border-radius: 25px;
+
+      text-align: center;
+
+      box-shadow:
+        0 10px 30px
+        rgba(120,50,70,0.09);
+
+      transition: 0.3s;
+    }
+
+
+    .card:hover {
+
+      transform:
+        translateY(-7px);
+    }
+
+
+    .emoji {
+
+      font-size: 45px;
+
+      margin-bottom: 15px;
+    }
+
+
+    .card h3 {
+
+      color: #a83254;
+
+      margin-bottom: 10px;
+    }
+
+
+    .card p {
+
+      line-height: 1.6;
+
+      font-size: 14px;
+    }
+
+
+
+    /* =================================
+       NEED SECTION
+    ================================= */
+
+    .need-box {
+
+      text-align: center;
+
+      background: #fff;
+
+      padding:
+        35px 20px;
+
+      border-radius: 28px;
+
+      box-shadow:
+        0 10px 35px
+        rgba(120,50,70,0.1);
+    }
+
+
+    #response {
+
+      margin-top: 25px;
+
+      font-size: 19px;
+
+      color: #b42f55;
+
+      font-weight: bold;
+
+      min-height: 50px;
+
+      line-height: 1.6;
+    }
+
+
+
+    /* =================================
+       SURPRISE
+    ================================= */
+
+    .surprise {
+
+      text-align: center;
+    }
+
+
+    .gift {
+
+      font-size: 85px;
+
+      cursor: pointer;
+
+      display: inline-block;
+
+      transition: 0.4s;
+
+      margin-top: 15px;
+    }
+
+
+    .gift:hover {
+
+      transform:
+        scale(1.15)
+        rotate(5deg);
+    }
+
+
+
+    /* =================================
+       LOVE POPUP
+    ================================= */
+
+    .popup {
+
+      display: none;
+
+      position: fixed;
+
+      inset: 0;
+
+      background:
+        rgba(70,20,40,0.55);
+
+      backdrop-filter:
+        blur(7px);
+
+      justify-content: center;
+
+      align-items: center;
+
+      padding: 20px;
+
+      z-index: 10000;
+    }
+
+
+    .popup-box {
+
+      background:
+        linear-gradient(
+          145deg,
+          #fff,
+          #fff0f5
+        );
+
+      width: 100%;
+
+      max-width: 520px;
+
+      max-height: 90vh;
+
+      overflow-y: auto;
+
+      padding:
+        40px 25px;
+
+      border-radius: 30px;
+
+      text-align: center;
+
+      box-shadow:
+        0 20px 60px
+        rgba(100,30,60,0.3);
+
+      animation:
+        popupIn 0.5s ease;
+    }
+
+
+    @keyframes popupIn {
+
+      from {
+
+        transform:
+          scale(0.6)
+          translateY(30px);
+
+        opacity: 0;
+      }
+
+      to {
+
+        transform:
+          scale(1)
+          translateY(0);
+
+        opacity: 1;
+      }
+
+    }
+
+
+    .popup-heart {
+
+      font-size: 55px;
+
+      animation:
+        heartbeat 1.2s infinite;
+    }
+
+
+    @keyframes heartbeat {
+
+      0%, 100% {
+        transform:
+          scale(1);
+      }
+
+      50% {
+        transform:
+          scale(1.2);
+      }
+
+    }
+
+
+    .popup h2 {
+
+      color: #b52f59;
+
+      font-size: 30px;
+
+      margin:
+        15px 0;
+    }
+
+
+    .popup p {
+
+      line-height: 1.8;
+
+      font-size: 17px;
+
+      color: #633744;
+    }
+
+
+    .close-btn {
+
+      margin-top: 25px;
+
+      padding:
+        12px 25px;
+
+      border: none;
+
+      border-radius: 50px;
+
+      background:
+        #b52f59;
+
+      color: white;
+
+      cursor: pointer;
+
+      font-size: 15px;
+    }
+
+
+
+    /* =================================
+       FOOTER
+    ================================= */
+
+    footer {
+
+      text-align: center;
+
+      padding:
+        50px 20px;
+
+      color:
+        #8d5263;
+    }
+
+
+
+    /* =================================
+       MOBILE
+    ================================= */
+
+    @media(max-width:600px) {
+
+      .hero-box {
+
+        padding:
+          35px 18px;
+      }
+
+
+      .hero p {
+
+        font-size: 15px;
+      }
+
+
+      .section-title {
+
+        font-size: 28px;
+      }
+
+
+      section {
+
+        padding:
+          50px 0;
+      }
+
+
+      .btn {
+
+        margin:
+          8px 4px;
+
+        padding:
+          12px 18px;
+
+        font-size: 14px;
+      }
+
+
+      .popup h2 {
+
+        font-size: 25px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =================================
+       PASSWORD SCREEN
+  ================================= -->
+
+  <div id="passwordScreen">
+
+    <div class="password-box">
+
+      <div class="lock">
+        🔐
+      </div>
+
+
+      <h1>
+        Hey My Cutie Pie ❤️
+      </h1>
+
+
+      <p>
+
+        This little place is only for you. 🥺
+
+        <br>
+
+        Enter our secret password
+        to come inside. 💗
+
+      </p>
+
+
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Enter password ❤️"
+        autocomplete="off"
+        onkeypress="checkEnter(event)"
+      >
+
+
+      <br>
+
+
+      <button onclick="checkPassword()">
+
+        Open My Surprise 💕
+
+      </button>
+
+
+      <div id="wrongPassword"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =================================
+       FLOATING HEARTS
+  ================================= -->
+
+  <div
+    class="heart"
+    style="left:10%; animation-delay:0s;">
+    ❤️
+  </div>
+
+  <div
+    class="heart"
+    style="left:30%; animation-delay:2s;">
+    💗
+  </div>
+
+  <div
+    class="heart"
+    style="left:55%; animation-delay:4s;">
+    💕
+  </div>
+
+  <div
+    class="heart"
+    style="left:80%; animation-delay:1s;">
+    ❤️
+  </div>
+
+
+
+  <!-- =================================
+       HERO
+  ================================= -->
+
+  <div class="hero">
+
+    <div class="container">
+
+      <div class="hero-box">
+
+        <div class="small">
+
+          A LITTLE SOMETHING
+          FOR YOU ❤️
+
+        </div>
+
+
+        <h1>
+
+          My Dear
+          Kuchu Puchu ❤️
+
+        </h1>
+
+
+        <p>
+
+          Hi cutie pie 🥺❤️
+
+          <br><br>
+
+          I know these days can be
+          uncomfortable and exhausting.
+
+          So I made this little corner
+          of the internet just for you.
+
+          <br><br>
+
+          Just love, comfort, care
+          and a reminder that
+          I'm always here for you. 🫶
+
+          <br><br>
+
+          ~ Your Manu ❤️
+
+        </p>
+
+
+        <button
+          class="btn"
+          onclick="scrollToCare()">
+
+          Take Me To Your
+          Care Kit 🌸
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =================================
+       MESSAGE
+  ================================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+
+        A Message For You 💌
+
+      </h2>
+
+
+      <div class="message">
+
+        <p>
+
+          You don't have to be strong
+          every single moment.
+
+          <br><br>
+
+          You can rest.
+          You can sleep.
+          You can complain.
+
+          <br><br>
+
+          You can eat your favourite food.
+
+          <br><br>
+
+          You can ask for cuddles.
+
+          <br><br>
+
+          You can simply do nothing.
+
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+          During these days,
+          please remember that
+          you deserve patience,
+          kindness and lots of care. 🌷
+
+        </p>
+
+
+        <br>
+
+
+        <strong>
+
+          And whenever you need me...
+
+          <br>
+
+          I'm only one message away. ❤️
+
+        </strong>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =================================
+       CARE KIT
+  ================================= -->
+
+  <section id="care">
+
+    <div class="container">
+
+      <h2 class="section-title">
+
+        Your Little Care Kit 🌸
+
+      </h2>
+
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="emoji">
+            🫖
+          </div>
+
+          <h3>
+            Something Warm
+          </h3>
+
+          <p>
+
+            A warm drink or heating pad
+            can be comforting.
+
+            Take some time to relax. ❤️
+
+          </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <div class="emoji">
+            🍫
+          </div>
+
+          <h3>
+            Favourite Snack
+          </h3>
+
+          <p>
+
+            Chocolate, fruit, snacks
+            or whatever makes
+            my cutie pie happy. 😋
+
+          </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <div class="emoji">
+            🛌
+          </div>
+
+          <h3>
+            Rest
+          </h3>
+
+          <p>
+
+            Forget the world for a while.
+
+            Get comfortable and
+            give yourself some rest. 🫶
+
+          </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <div class="emoji">
+            💆‍♀️
+          </div>
+
+          <h3>
+            Relax
+          </h3>
+
+          <p>
+
+            Watch something cute,
+            listen to your favourite songs,
+            or simply enjoy some quiet time.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <div class="emoji">
+            💧
+          </div>
+
+          <h3>
+            Stay Hydrated
+          </h3>
+
+          <p>
+
+            Keep drinking enough water
+            and take care of yourself. 💗
+
+          </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+          <div class="emoji">
+            ❤️
+          </div>
+
+          <h3>
+            Extra Love
+          </h3>
+
+          <p>
+
+            And most importantly...
+
+            <br>
+
+            Unlimited love
+            from your Manu. 🫶
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =================================
+       WHAT DO YOU NEED
+  ================================= -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+
+        Tell Me What You Need 🥺
+
+      </h2>
+
+
+      <div class="need-box">
+
+        <p>
+
+          You don't even have to explain.
+
+          <br>
+
+          Just press a button. ❤️
+
+        </p>
+
+
+        <button
+          class="btn"
+          onclick="need('food')">
+
+          🍕 I Want Food
+
+        </button>
+
+
+        <button
+          class="btn"
+          onclick="need('rest')">
+
+          🛌 I Want To Rest
+
+        </button>
+
+
+        <button
+          class="btn"
+          onclick="need('love')">
+
+          🫂 I Need Cuddles
+
+        </button>
+
+
+        <button
+          class="btn"
+          onclick="need('talk')">
+
+          💬 I Want To Talk
+
+        </button>
+
+
+        <div id="response"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =================================
+       SURPRISE
+  ================================= -->
+
+  <section>
+
+    <div class="container surprise">
+
+      <h2 class="section-title">
+
+        One Little Surprise 🎁
+
+      </h2>
+
+
+      <p>
+
+        Tap the gift...
+
+        <br>
+
+        Maybe there is something
+        special from Manu inside. 🥺❤️
+
+      </p>
+
+
+      <div
+        class="gift"
+        onclick="openGift()">
+
+        🎁
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =================================
+       LOVE POPUP
+  ================================= -->
+
+  <div
+    class="popup"
+    id="lovePopup">
+
+    <div class="popup-box">
+
+      <div class="popup-heart">
+        ❤️
+      </div>
+
+
+      <h2>
+
+        I Love You So Much,
+        Cutie Pie! 🥺❤️
+
+      </h2>
+
+
+      <p>
+
+        My kuchu puchu,
+        you are so special to me. 💗
+
+        <br><br>
+
+        Even on the days when
+        you're tired, uncomfortable,
+        emotional or simply not
+        feeling yourself...
+
+        <br><br>
+
+        I still love you
+        exactly the same. 🫂❤️
+
+        <br><br>
+
+        Please take care of yourself,
+        rest well and remember...
+
+        <br><br>
+
+        <strong>
+
+          Your Manu is always
+          cheering for you. 🌸
+
+        </strong>
+
+        <br><br>
+
+        I love youuuu so muchhh
+        cutie pieeee! 😘❤️🫶
+
+      </p>
+
+
+      <button
+        class="close-btn"
+        onclick="closeGift()">
+
+        Close ❤️
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =================================
+       FOOTER
+  ================================= -->
+
+  <footer>
+
+    Made with unlimited love
+    by your Manu ❤️
+
+    <br><br>
+
+    🌸 Take care of yourself,
+    beautiful 🌸
+
+  </footer>
+
+
+
+  <!-- =================================
+       JAVASCRIPT
+  ================================= -->
+
+  <script>
+
+
+    /* =================================
+       PASSWORD
+    ================================= */
+
+    const secretPassword = "2112";
+
+
+    function checkPassword() {
+
+      const enteredPassword =
+        document
+          .getElementById("passwordInput")
+          .value;
+
+
+      const wrongPassword =
+        document
+          .getElementById("wrongPassword");
+
+
+      if (enteredPassword === secretPassword) {
+
+        wrongPassword.innerHTML =
+          "Yayyy! Welcome my cutie pie! ❤️🥺";
+
+
+        setTimeout(function() {
+
+          document
+            .getElementById("passwordScreen")
+            .style.display = "none";
+
+
+          document.body.style.overflow =
+            "auto";
+
+
+          createMultipleHearts();
+
+        }, 700);
+
+
+      } else {
+
+        wrongPassword.innerHTML =
+          "Awww wrong password 🥺 Try again, cutie pie! ❤️";
+
+
+        document
+          .getElementById("passwordInput")
+          .value = "";
+
+      }
+
+    }
+
+
+
+    function checkEnter(event) {
+
+      if (event.key === "Enter") {
+
+        checkPassword();
+
+      }
+
+    }
+
+
+
+    /* =================================
+       SCROLL TO CARE
+    ================================= */
+
+    function scrollToCare() {
+
+      document
+        .getElementById("care")
+        .scrollIntoView({
+          behavior: "smooth"
+        });
+
+    }
+
+
+
+    /* =================================
+       NEED BUTTONS
+    ================================= */
+
+    function need(type) {
+
+      const response =
+        document
+          .getElementById("response");
+
+
+      if (type === "food") {
+
+        response.innerHTML =
+
+          "🍕 Awww my hungry cutie pie! 😋❤️ " +
+
+          "Go get something yummy. " +
+
+          "If I was there, I would bring " +
+
+          "your favourite food for you. " +
+
+          "Enjoy every bite, baby! 🫶";
+
+      }
+
+
+      if (type === "rest") {
+
+        response.innerHTML =
+
+          "🛌 Okay my sleepy puchu 🥺❤️ " +
+
+          "Everything else can wait. " +
+
+          "Get comfortable, close your eyes " +
+
+          "and take some proper rest. " +
+
+          "Your Manu says REST! 😘🌸";
+
+      }
+
+
+      if (type === "love") {
+
+        response.innerHTML =
+
+          "🫂 Come hereee, my kuchu puchu! ❤️ " +
+
+          "Sending you the biggest, warmest " +
+
+          "virtual cuddle until I can give " +
+
+          "you a real one. 🥺🫂💗 " +
+
+          "Imagine me holding you and saying, " +
+
+          "\"It's okay baby, I'm here.\"";
+
+      }
+
+
+      if (type === "talk") {
+
+        response.innerHTML =
+
+          "💬 Awww baby, you want to talk? 🥺❤️ " +
+
+          "If I'm not available right now, " +
+
+          "please don't think I'm ignoring you. " +
+
+          "I'm probably caught up with something. " +
+
+          "Text me everything you want to tell me. " +
+
+          "I'll come back to you when I'm free " +
+
+          "and we'll talk properly. ❤️🫂 " +
+
+          "You can always talk to your Manu.";
+
+      }
+
+
+      createHeart();
+
+    }
+
+
+
+    /* =================================
+       GIFT POPUP
+    ================================= */
+
+    function openGift() {
+
+      document
+        .getElementById("lovePopup")
+        .style.display = "flex";
+
+
+      createMultipleHearts();
+
+    }
+
+
+
+    function closeGift() {
+
+      document
+        .getElementById("lovePopup")
+        .style.display = "none";
+
+    }
+
+
+
+    /* =================================
+       CLICK OUTSIDE POPUP
+    ================================= */
+
+    document
+      .getElementById("lovePopup")
+      .addEventListener(
+        "click",
+        function(event) {
+
+          if (event.target === this) {
+
+            closeGift();
+
+          }
+
+        }
+      );
+
+
+
+    /* =================================
+       CREATE HEART
+    ================================= */
+
+    function createHeart() {
+
+      const heart =
+        document.createElement("div");
+
+
+      const hearts = [
+        "❤️",
+        "💗",
+        "💕",
+        "💖",
+        "💓",
+        "💘"
+      ];
+
+
+      heart.innerHTML =
+        hearts[
+          Math.floor(
+            Math.random() * hearts.length
+          )
+        ];
+
+
+      heart.style.position =
+        "fixed";
+
+
+      heart.style.left =
+        Math.random() * 90 + "%";
+
+
+      heart.style.bottom =
+        "20px";
+
+
+      heart.style.fontSize =
+        Math.random() * 20 + 20 + "px";
+
+
+      heart.style.zIndex =
+        "20000";
+
+
+      heart.style.pointerEvents =
+        "none";
+
+
+      heart.style.animation =
+        "floatUp 4s linear forwards";
+
+
+      document.body.appendChild(
+        heart
+      );
+
+
+      setTimeout(
+        function() {
+          heart.remove();
+        },
+        4000
+      );
+
+    }
+
+
+
+    /* =================================
+       MULTIPLE HEARTS
+    ================================= */
+
+    function createMultipleHearts() {
+
+      for (
+        let i = 0;
+        i < 15;
+        i++
+      ) {
+
+        setTimeout(
+          createHeart,
+          i * 100
+        );
+
+      }
+
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>
+```
